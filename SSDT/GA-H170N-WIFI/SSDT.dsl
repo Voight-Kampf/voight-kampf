@@ -96,7 +96,7 @@ DefinitionBlock ("SSDT.aml", "SSDT", 1, "APPLE ", "general", 0x00001000)
             {
                 // NVIDIA GPU
                 #ifdef GPU
-                    #include "gpu/GFX1.dsl"
+                    #include "gpu/GFX1-minimal.dsl"
                 #endif
             }
 
