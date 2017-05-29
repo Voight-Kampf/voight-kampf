@@ -32,7 +32,7 @@ ALL=$(BUILDDIR)/SSDT.aml
 .PHONY: all
 all: $(ALL) $(HDAINJECT) $(HDAHCDINJECT)
 
-$(BUILDDIR)/SSDT.aml: $(DSLDIR)/SSDT.dsl $(DSLDIR)/gpu/GFX1.dsl $(DSLDIR)/audio/HDEF.dsl $(DSLDIR)/fix/PTS.dsl $(DSLDIR)/usb/EC.dsl $(DSLDIR)/usb/USBX.dsl $(DSLDIR)/usb/EC.dsl 
+$(BUILDDIR)/SSDT.aml: $(DSLDIR)/SSDT.dsl $(DSLDIR)/gpu/GFX1.dsl $(DSLDIR)/audio/HDEF.dsl $(DSLDIR)/fix/_PTS.dsl $(DSLDIR)/usb/EC.dsl $(DSLDIR)/usb/USBX.dsl $(DSLDIR)/usb/EC.dsl 
 	$(IASL) $(IASLFLAGS) -p $@ $<
 
 .PHONY: clean
