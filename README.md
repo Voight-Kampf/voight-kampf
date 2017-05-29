@@ -1,6 +1,6 @@
 # voight-kampf
 
-Thanks to the Gods of Hackintosh, in no particular order: Piker Alpha, Rehabman
+Thanks to the Gods of Hackintosh, in no particular order: Piker Alpha, Rehabman, and the unnamed Masters of SSDT
 
 
 required kext sources and makefile for my hmac
