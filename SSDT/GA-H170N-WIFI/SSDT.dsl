@@ -129,7 +129,7 @@ DefinitionBlock ("SSDT.aml", "SSDT", 1, "APPLE ", "general", 0x00001000)
     // functions
     // must rename _PTS to something other, see fixes/_PTS.dsl
     #ifdef SHUTDOWN
-        #include "fix/PTS.dsl"
+        #include "fix/_PTS.dsl"
     #endif
 
     //

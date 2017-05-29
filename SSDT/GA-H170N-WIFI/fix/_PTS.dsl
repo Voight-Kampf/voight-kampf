@@ -19,11 +19,12 @@ Some DSDT tables already contain such a condition and it is advised to turn the 
 
 // http://www.insanelymac.com/forum/topic/302236-yosemite-fails-to-wake-from-sleep/page-2
 
-External (\_SB.TPM.TPTS, MethodObj)                 // 1 Arguments
-External (\_SB.PCI0.LPCB.SIO1.SIOS, MethodObj)      // 1 Arguments
-External (\_SB.PCI0.LPCB.SPTS, MethodObj)           // 1 Arguments
-External (\_SB.PCI0.NPTS, MethodObj)                // 1 Arguments
-External (RPTS, MethodObj)                          // 1 Arguments
+// original _PTS method externals
+// External (\_SB.TPM.TPTS, MethodObj)                 // 1 Arguments
+// External (\_SB.PCI0.LPCB.SIO1.SIOS, MethodObj)      // 1 Arguments
+// External (\_SB.PCI0.LPCB.SPTS, MethodObj)           // 1 Arguments
+// External (\_SB.PCI0.NPTS, MethodObj)                // 1 Arguments
+// External (RPTS, MethodObj)                          // 1 Arguments
 
 // reference to original _PTS renamed with clover
 // for calling into original _PTS method when required
