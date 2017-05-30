@@ -70,7 +70,8 @@ DefinitionBlock ("SSDT.aml", "SSDT", 1, "APPLE ", "general", 0x00001000)
     // External (\_SB_, DeviceObj)
     External (\_SB_.PCI0, DeviceObj)
     External (\_SB_.PCI0.PEG0, DeviceObj)
-    External (\_SB_.PCI0.PEG0.PEGP, DeviceObj)    // (from opcode)
+    External (\_SB_.PCI0.PEG0.PEGP, DeviceObj)
+    External (\_SB_.PCI0.SBUS, DeviceObj)
 
     // cpu
     #ifdef CPU
@@ -112,6 +113,12 @@ DefinitionBlock ("SSDT.aml", "SSDT", 1, "APPLE ", "general", 0x00001000)
             #ifdef ORANGE
                 #include "fixes/orangeicon.dsl"
             #endif
+
+            // SMBUS
+            Scope (SBUS)
+            {
+                #include "smbus/SMBUS.dsl"
+            }
 
         } // end ---------------------------------------------------- scope _SB.PCI0
 
